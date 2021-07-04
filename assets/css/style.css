@@ -49,6 +49,25 @@
     height: 200px;
     margin: 10px;
     width: 80%;
+    background-color: rgb(50, 92, 141);
+    color: #ffff;
+}
+
+.content-header {
+    display: flex;
+    flex-direction: row;
+}
+
+#display-city-name {
+    margin-top: 5px;
+}
+
+.custom-icon {
+    height: 50px;
+    width: 70px;
+    margin-left: 10px;
+    object-fit: none;
+    display: none;
 }
 
 .forecast-container {

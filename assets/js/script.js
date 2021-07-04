@@ -3,6 +3,7 @@ var cityName = $("#city-name")
 var cityInput = $(".city-input")
 var displayCityName = $("#display-city-name")
 var displayCurrentWeather = $(".content-container")
+var displayIcon = $(".custom-icon")
 var currentDate = moment().format("l")          
 
 cityInput.on("submit", function(event) {
@@ -17,6 +18,11 @@ cityInput.on("submit", function(event) {
     .then(function(data){
         console.log(data)
         var { name } = data
+        var { icon } = data.weather[0]
+        var { temp } = data.main
         displayCityName.text(name + " " + currentDate)
+        displayIcon.css("display", "initial")
+        displayIcon.attr("src", "http://openweathermap.org/img/wn/" + icon + "@2x.png")
+
     })
 })
