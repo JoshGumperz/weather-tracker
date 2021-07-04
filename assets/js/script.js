@@ -1,6 +1,9 @@
 var apiKey = "4fd1df31154eabf381d8360e8c92b155"
 var cityName = $("#city-name")
 var cityInput = $(".city-input")
+var displayCityName = $("#display-city-name")
+var displayCurrentWeather = $(".content-container")
+var currentDate = moment().format("l")          
 
 cityInput.on("submit", function(event) {
     event.preventDefault()
@@ -13,5 +16,7 @@ cityInput.on("submit", function(event) {
     })
     .then(function(data){
         console.log(data)
+        var { name } = data
+        displayCityName.text(name + " " + currentDate)
     })
 })
