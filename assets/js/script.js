@@ -15,9 +15,9 @@ cityInput.on("submit", function(event) {
     event.preventDefault()
     contentEL.css("display", "initial")
     var city = cityName.val()
-    var URL = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=imperial&appid=" + apiKey
+    var weatherURL = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=imperial&appid=" + apiKey
 
-    fetch(URL)
+    fetch(weatherURL)
     .then(function(response){
         return response.json()
     })
@@ -27,11 +27,32 @@ cityInput.on("submit", function(event) {
         var { icon } = data.weather[0]
         var { temp, humidity } = data.main
         var { speed } = data.wind
+        var { lat, lon } = data.coord
+        var onecallURL = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&exclude={part}&appid=${apiKey}`
         displayCityName.text(name + " " + currentDate)
         displayIcon.css("display", "initial")
         displayIcon.attr("src", "http://openweathermap.org/img/wn/" + icon + "@2x.png")
         displayTemp.text("Temperature: " + temp)
         displayHumidity.text("Humidity: " + humidity + "%")
         windSpeed.text("Wind Speed: " + speed + " MPH")
+
+        fetch(onecallURL)
+        .then(function(response){
+            return response.json()
+        })
+        .then(function(data){
+            console.log(data)
+            var { uvi } = data.current
+            uvIndex.text(" " + uvi)
+            if(uvi < 3) {
+                uvIndex.addClass("uv-favorable")
+            }
+            else if (uvi < 6) {
+                uvIndex.addClass("uv-moderate")
+            }
+            else {
+                uvIndex.addClass("uv-severe")
+            }
+        })
     })
 })

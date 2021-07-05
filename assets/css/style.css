@@ -72,13 +72,22 @@
 }
 
 .uv-favorable {
-    background-color: rgb(0, 117, 6);
+    color: #ffff;
+    background-color: rgb(0, 168, 8);
+    border-radius: 3px;
+    margin: 5px;
 }
 .uv-moderate {
-    background-color: rgb(240, 237, 59);
+    color: #ffff;
+    background-color: rgb(204, 201, 44);
+    border-radius: 3px;
+    margin: 5px;
 }
 .uv-severe {
+    color: #ffff;
     background-color: rgb(255, 0, 0);
+    border-radius: 3px;
+    margin: 5px;
 }
 
 .forecast-container {
