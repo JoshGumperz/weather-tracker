@@ -65,6 +65,13 @@
 
 .custom-icon {
     height: 50px;
+    width: 50px;
+    margin-left: 10px;
+    display: none;
+}
+
+#current-icon {
+    height: 50px;
     width: 70px;
     margin-left: 10px;
     object-fit: none;
@@ -102,5 +109,8 @@
 
 .five-day-forecast {
     margin: 0px 10px 0px 10px;
+    width: 150px;
     height: 200px;
+    background-color: rgb(50, 92, 141);
+    color: #ffff;
 }

@@ -28,23 +28,48 @@
         </aside>
         <main class="content">
             <div class="content-container card card-body">
-                <div class="content-header"><h2 id="display-city-name"></h2><img class="custom-icon"/></div>
-                <p class="temp"></p>
-                <p class="humidity"></p>
+                <div class="content-header"><h2 class="display-city-name" id="city-name-current"></h2><img id="current-icon"/></div>
+                <p id="current-temp"></p>
+                <p id="current-humidity"></p>
                 <p id="wind-speed"></p>
                 <p>UV Index:<span id="uv-index"></span></p>
             </div>
             <div class="forecast-container">
-                <div class="five-day-forecast card card-body"></div>
-                <div class="five-day-forecast card card-body"></div>
-                <div class="five-day-forecast card card-body"></div>
-                <div class="five-day-forecast card card-body"></div>
-                <div class="five-day-forecast card card-body"></div>
+                <div class="five-day-forecast card card-body">
+                    <h5 class="display-city-name" id="city-name-day-one"></h5>
+                    <img class="custom-icon" id="icon-day-one"/>
+                    <p id="temp-day-one"></p>
+                    <p id="humidity-day-one"></p>
+                </div>
+                <div class="five-day-forecast card card-body">
+                    <h5 class="display-city-name" id="city-name-day-two"></h5>
+                    <img class="custom-icon" id="icon-day-two"/>
+                    <p id="temp-day-two"></p>
+                    <p id="humidity-day-two"></p>
+                </div>
+                <div class="five-day-forecast card card-body">
+                    <h5 class="display-city-name" id="city-name-day-three"></h5>
+                    <img class="custom-icon" id="icon-day-three"/>
+                    <p id="temp-day-three"></p>
+                    <p id="humidity-day-three"></p>
+                </div>
+                <div class="five-day-forecast card card-body">
+                    <h5 class="display-city-name" id="city-name-day-four"></h5>
+                    <img class="custom-icon" id="icon-day-four"/>
+                    <p id="temp-day-four"></p>
+                    <p id="humidity-day-four"></p>
+                </div>
+                <div class="five-day-forecast card card-body">
+                    <h5 class="display-city-name" id="city-name-day-five"></h5>
+                    <img class="custom-icon" id="icon-day-five"/>
+                    <p id="temp-day-five"></p>
+                    <p id="humidity-day-five"></p>
+                </div>
             </div>
         </main>
     </div>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-    <script src="assets/js/script.js">  </script>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
