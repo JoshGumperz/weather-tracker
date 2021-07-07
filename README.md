@@ -17,13 +17,16 @@ Main features include:
 - Site adjusts content to accomadate use on devices with smaller screens
 
 Upon initially loading in to the site you will see this:
-![Screenshot](https://i.imgur.com/DJt4Hi1.png)
+![Screenshot](https://i.imgur.com/M1dtFeR.png)
 
 After searching for the city you'd like to see weather information on you will be presented with 6 widgets displaying the weather data for that city for today, as well as the next 5 days:
-![Screenshot](https://i.imgur.com/z1jjK8w.png)
+![Screenshot](https://i.imgur.com/qygQhJn.png)
 
 After you search for a city, along with the weather information for that city, you'll also see a list start to populate with all the cities you've searched previously. If you click on one of the buttons in the list, you will be presented with the weather information for the city listed on that button
-![Screenshot](https://i.imgur.com/Qc4FSeq.png)
+![Screenshot](https://i.imgur.com/ChPpU2G.png)
+
+If you scale the screen down to a smaller size, you'll see the content adjusts to accomodate the new dimensions:
+![Screenshot](https://i.imgur.com/XTLCc7a.png)
 
 
 
