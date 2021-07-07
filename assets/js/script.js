@@ -70,6 +70,10 @@ function displaySavedCities() {
     }
 }
 
+function clearSavedCities() {
+    searchedCities.empty()
+}
+
 
 searchedCities.on("click", function(event){
     var element = event.target;
@@ -81,6 +85,8 @@ searchedCities.on("click", function(event){
 })
 
 function getWeatherData(URL){
+    clearSavedCities()
+    displaySavedCities()
     contentEL.css("display", "initial")
     fetch(URL)
         .then(function (response) {
