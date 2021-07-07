@@ -109,6 +109,7 @@
     margin: 0px 10px 0px 10px;
     width: 150px;
     height: 230px;
+    margin-bottom: 5px;
     background-color: rgb(50, 92, 141);
     color: #ffff;
 }
@@ -126,20 +127,17 @@
         flex-direction: column;
     }
 
-    .forecast-container {
-        max-width: 89%;
-    }
-
-    .five-day-forecast {
-        width: 80%;
-        height: 240px;
-        margin-bottom: 5px;
-    }
-
     .content-container {
         height: 300px;
         width: 80%;
     }
 
+    .forecast-container {
+        max-width: 70%;
+    }
+
+    .five-day-forecast {
+        height: 240px;
+    }
     
 }
