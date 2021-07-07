@@ -115,3 +115,34 @@
     background-color: rgb(50, 92, 141);
     color: #ffff;
 }
+
+@media screen and (max-width: 1250px) {
+    #row-container {
+        flex-direction: column;
+    }
+
+    .search-container {
+        width: 100%;
+    }
+
+    .city-input {
+        flex-direction: column;
+    }
+
+    .forecast-container {
+        max-width: 89%;
+    }
+
+    .five-day-forecast {
+        width: 80%;
+        height: 240px;
+        margin-bottom: 5px;
+    }
+
+    .content-container {
+        height: 300px;
+        width: 80%;
+    }
+
+    
+}

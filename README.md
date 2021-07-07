@@ -14,6 +14,7 @@ Main features include:
 - A search function that allows you to input a city and see the weather data on that city for today as well as the next 5 days
 - A color coded uv index to tell you weather or not it's safe to go outside without sunscreen
 - The last 5 searched cities will be saved to local storage so if you want to you can go back and access those at any point
+- Site adjusts content to accomadate use on devices with smaller screens
 
 Upon initially loading in to the site you will see this:
 ![Screenshot](https://i.imgur.com/DJt4Hi1.png)

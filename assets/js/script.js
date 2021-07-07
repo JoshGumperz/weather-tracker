@@ -55,8 +55,8 @@ function saveCities(city) {
     if (!cityNames.includes(city)) {
     cityNames.unshift(city)
     }
-    if (cityNames.length === 5){
-        cityNames.splice(4, 1)
+    if (cityNames.length === 6){
+        cityNames.splice(5, 1)
     }
     console.log(cityNames)
     localStorage.setItem("Cities", JSON.stringify(cityNames))
