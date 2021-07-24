@@ -68,9 +68,7 @@ function saveCities(city) {
         cityNames.splice(5, 1)
     }
     // set cityNames array in local storage
-    localStorage.setItem("Cities", JSON.stringify(cityNames))
-    return city
-    
+    localStorage.setItem("Cities", JSON.stringify(cityNames))  
 }
 // this function creates and appends the list items for each city stored in local storage
 function displaySavedCities() {
